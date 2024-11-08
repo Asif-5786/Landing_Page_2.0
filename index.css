@@ -197,6 +197,16 @@ body {
     background-color: rgba(71, 71, 71, 0.5);
 }
 
+@media(max-width:576px) {
+    .swiper-button-next {
+        background-color: transparent
+    }
+
+    .swiper-button-prev {
+        background-color: transparent
+    }
+}
+
 /* *******************************************************************************************************************
                                                                     Key Features Styling Starts Here 
 **********************************************************************************************************************/
@@ -206,6 +216,16 @@ body {
     height: auto;
     object-fit: contain;
     width: 100%;
+}
+
+.key_features_icons {
+    margin-top: 60px;
+}
+
+@media(max-width:576px) {
+    .key_features_icons {
+        margin-top: 30px;
+    }
 }
 
 /* *******************************************************************************************************************
