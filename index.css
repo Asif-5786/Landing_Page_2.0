@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --primary-color: #17479e;
+    --secondary-color: #474747;
+    --background-color: #f9f9f9;
+
+}
+
+/* *******************************************************************************************************************
+                                                                    Navbar Styling Starts Here 
+**********************************************************************************************************************/
+
+.navbar {
+    border-bottom: 1px solid rgba(71, 71, 71, 0.1);
+    padding-bottom: 0;
+}
+
+.navbar-brand .logo {
+    max-width: 90px;
+    height: auto;
+}
+
+.social_icons {
+    font-size: 30px;
+    gap: 15px;
+}
+
+/* *******************************************************************************************************************
+                                                                    Banner Styling Starts Here 
+**********************************************************************************************************************/
+.banner_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.banner_image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.amazon-button {
+    position: absolute;
+    bottom: 26%;
+    left: 13%;
+    width: 26%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+/* .amazon-button:hover {
+    background-color: rgba(0, 255, 255, 1);
+} */
+
+@media(max-width:576px) {
+    .amazon-button_mobile {
+        position: absolute;
+        bottom: 14%;
+        left: 25%;
+        width: 50%;
+        height: 9%;
+        background-color: rgba(0, 0, 0, 0);
+        cursor: pointer;
+    }
+}
+
+/* *******************************************************************************************************************
+                                                                    Testimonials image Starts Here 
+**********************************************************************************************************************/
+
+.testimonials_container img {
+    width: 30%;
+    height: auto;
+    object-fit: contain;
+}
+
+.testimonials_image_text {
+    gap: 1rem;
+}
+
+.testimonials_image_text p {
+    color: #17479e;
+    font-weight: 600;
+}
+
+@media(max-width:576px) {
+    .testimonials_image_text p {
+        font-size: 22px;
+    }
+}
+
+@media(max-width:325px) {
+    .testimonials_image_text p {
+        font-size: 20px;
+    }
+}
+
+/* *******************************************************************************************************************
+                                                                Testimonials Video Styling Starts Here 
+**********************************************************************************************************************/
+@media(min-width:768px) {
+    .swiper-slide_video {
+        width: 233.429px !important;
+        margin-right: 0px !important;
+    }
+}
+
+.testimonials_video img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.video-container {
+    height: 350px;
+    width: 220px;
+    /* Set the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Hide any overflow if the aspect ratio changes */
+    border-radius: 1rem;
+}
+
+.video-container video {
+    height: 100%;
+    /* Make the video fit the container height */
+    width: 100%;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+}
+
+@media(max-width:576px) {
+    .video-container {
+        width: 250px;
+        height: 420px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 1rem;
+    }
+
+    .video-container video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .swiper .swiper-wrapper .swiper-slide-active {
+        width: 248px !important;
+    }
+}
+
+/* 
+.card-swiper .swiper-button-next:after {
+    font-size: 1rem;
+    color: #17479e;
+    font-weight: 900;
+}
+
+.card-swiper .swiper-button-prev:after {
+    font-size: 1rem;
+    color: #17479e;
+    font-weight: 900;
+}
+
+.swiper-button-next {
+    top: 98% !important;
+}
+
+.swiper-button-prev {
+    top: 98% !important;
+    left: 92% !important;
+}
+
+.video-swiper .swiper-button-prev:after {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 900;
+}
+
+.video-swiper .swiper-button-next:after {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 900;
+} */
+
+@media(max-width:576px) {
+    .video-swiper .swiper-button-next::after {
+        display: none;
+    }
+}
+
+@media(max-width:576px) {
+    .video-swiper .swiper-button-prev::after {
+        display: none;
+    }
+}
+
+.swiper-button-next {
+    background-color: rgba(71, 71, 71, 0.5);
+}
+
+.swiper-button-prev {
+    background-color: rgba(71, 71, 71, 0.5);
+}
+
+@media(max-width:576px) {
+    .swiper-button-next {
+        background-color: transparent
+    }
+
+    .swiper-button-prev {
+        background-color: transparent
+    }
+}
+
+/* *******************************************************************************************************************
+                                                                    Key Features Styling Starts Here 
+**********************************************************************************************************************/
+
+
+.key_features_image {
+    height: auto;
+    object-fit: contain;
+    width: 100%;
+}
+
+.key_features_icons {
+    margin-top: 60px;
+}
+
+@media(max-width:576px) {
+    .key_features_icons {
+        margin-top: 30px;
+    }
+}
+
+/* *******************************************************************************************************************
+                                                                    Card Swiper Styling Starts Here 
+**********************************************************************************************************************/
+
+/* *******************************************************************************************************************
+                                                                    Card Swiper Styling Starts Here 
+**********************************************************************************************************************/
+.love_sia {
+    background-color: var(--background-color);
+}
+
+/* *******************************************************************************************************************
+                                                                    Footer Styling Starts Here 
+**********************************************************************************************************************/
+
+.footer {
+    background-color: var(--primary-color);
+}
