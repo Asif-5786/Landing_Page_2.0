@@ -130,6 +130,7 @@ body {
     overflow: hidden;
     /* Hide any overflow if the aspect ratio changes */
     border-radius: 1rem;
+    position: relative;
 }
 
 .video-container video {
@@ -160,6 +161,34 @@ body {
     .swiper .swiper-wrapper .swiper-slide-active {
         width: 248px !important;
     }
+}
+
+
+.video-thumbnail {
+    width: 100%;
+    cursor: pointer;
+}
+
+.play-icon-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.play-icon-overlay::before {
+    content: '\25B6';
+    /* Unicode for play icon */
+    color: white;
+    font-size: 24px;
 }
 
 /* 
